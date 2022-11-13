@@ -12,7 +12,7 @@ i = 1
 
 while (i != 0):
   question = input("Human: ")
-  conversation += "\nHumano: " + question + "\nAI:"
+  conversation += "\nHuman: " + question + "\nAI:"
   response = openai.Completion.create(
     engine="davinci",
     prompt=conversation,
